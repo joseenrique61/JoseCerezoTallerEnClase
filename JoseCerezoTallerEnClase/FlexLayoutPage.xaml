@@ -3,10 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JoseCerezoTallerEnClase.FlexLayoutPage"
              Title="FlexLayoutPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <FlexLayout JustifyContent="SpaceEvenly">
+        <Button ImageSource="settings.png"
+                Text="José"
+                Clicked="Button_Clicked"/>
+        
+        <Button ImageSource="dotnet_bot.png"
+                Text="Enrique"
+                Clicked="Button_Clicked"/>
+
+        <Button ImageSource="place.png"
+                Text="Cerezo"
+                Clicked="Button_Clicked"/>
+    </FlexLayout>
 </ContentPage>
