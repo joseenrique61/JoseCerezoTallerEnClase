@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JoseCerezoTallerEnClase.GridLayoutPage">
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Grid.Row="0"
+                       Grid.Column="0"
+                       BackgroundColor="Red"/>
+
+            <Rectangle Grid.Row="0"
+                       Grid.Column="1"
+                       BackgroundColor="Blue"/>
+
+            <Rectangle Grid.Row="1"
+                       Grid.Column="0"
+                       BackgroundColor="Green"/>
+
+            <Grid Grid.Row="1"
+                  Grid.Column="1"
+                  BackgroundColor="Yellow">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Text="StackLayout"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Clicked="Button_Clicked"/>
+            </Grid>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
