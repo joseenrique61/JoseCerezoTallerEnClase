@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JoseCerezoTallerEnClase.FlexLayoutPage"
              Title="FlexLayoutPage">
-    <FlexLayout JustifyContent="SpaceEvenly">
+    <FlexLayout JustifyContent="SpaceEvenly" Direction="Column">
         <Button ImageSource="settings.png"
                 Text="José"
                 Clicked="Button_Clicked"/>
