@@ -1,14 +1,14 @@
 namespace JoseCerezoTallerEnClase;
 
-public partial class FlexLayoutPage : ContentPage
+public partial class AbsoluteLayoutPage : ContentPage
 {
-	public FlexLayoutPage()
+	public AbsoluteLayoutPage()
 	{
 		InitializeComponent();
 	}
 
 	private void Button_Clicked(object sender, EventArgs e)
 	{
-		Navigation.PushAsync(new AbsoluteLayoutPage());
-    }
+		Navigation.PopToRootAsync();
+	}
 }
